@@ -16,6 +16,7 @@ class Manager:
 
         data_analyzer = DataAnalyzer(df)
 
+        # build the analyzed data for saving to a json
         analyzed_dict = {
             "total_tweets":
                 {
@@ -52,6 +53,7 @@ class Manager:
                 }
         }
 
+        # save the dict to a json file
         with open("results/result.json", "w") as json_file:
             json.dump(analyzed_dict, json_file, indent=4, default=str)
 
