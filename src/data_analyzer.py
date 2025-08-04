@@ -43,7 +43,7 @@ class DataAnalyzer:
 
     def get_10_most_common_words(self):
         ten_most_common_words = Counter(" ".join(self.df["Text"]).split()).most_common(10)
-        print(ten_most_common_words)
+        return ten_most_common_words
 
     @staticmethod
     def count_upper_words_per_row(text):

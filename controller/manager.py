@@ -52,7 +52,7 @@ class Manager:
                 }
         }
 
-        with open("result.json", "w") as json_file:
-            json.dump(analyzed_dict, json_file)
+        with open("results/result.json", "w") as json_file:
+            json.dump(analyzed_dict, json_file, indent=4, default=str)
 
 
